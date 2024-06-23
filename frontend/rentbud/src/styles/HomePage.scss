@@ -3,12 +3,26 @@
 }
 
 .HomePage-header {
-  background-color: #282c34;
+  background-color: #2a364d;
   min-height: 100vh;
   display: flex;
   flex-direction: column;
-  align-items: center;
+  align-items: center; // align items to the center
   justify-content: center;
   font-size: calc(10px + 2vmin);
   color: white;
+}
+
+.HomePage-about {
+  align-self: flex-start; // align this div to the start (left for column direction)
+  padding-left: 10%; // add some padding to not stick to the edge
+}
+
+.HomePage-about-tile-1 {
+  border: 1px solid black;
+  padding: 10px;
+  margin: 10px;
+  width: 200px; // set a fixed width for the box
+  text-align: center; // align the text to the center
+  font-size: 14px; // make the text smaller
 }

@@ -1,0 +1,23 @@
+.Navbar {
+  display: flex;
+  justify-content: space-between;
+  padding: 10px;
+  background-color: #282c34;
+  color: white;
+}
+
+.Navbar-title {
+  margin: 0;
+}
+
+.Navbar-links {
+  display: flex;
+  gap: 10px;
+}
+
+.Navbar-links button {
+  background-color: #282c34;
+  color: white;
+  border: none;
+  cursor: pointer;
+}
