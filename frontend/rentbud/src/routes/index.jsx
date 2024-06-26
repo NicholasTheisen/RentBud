@@ -1,17 +1,18 @@
 import React from 'react';
 import '../styles/HomePage.scss'; // import the new CSS file
 import Navbar from '../components/Navbar'; // import the Navbar component
+import { useNavigate } from 'react-router-dom';
 
 function HomePage() {
+  const navigate = useNavigate();
+
   return (
     <div className="HomePage">
-      <Navbar /> {/* Add the Navbar component */}
+      <Navbar />
       <header className="HomePage-header">
-        <h1>Rent Bud</h1>
-        <div className="HomePage-about">
-          <p className='HomePage-about-tile-1'>Rent Bud is an all in one solution for tenant and landlord related issues. We connect landlords to potential tenants and vice versa, providing security for both parties. Not only are we a rental website, what sets us apart, is our Rental Management platform, which allows landlords and tenants to manage all aspects of their rental agreements.
-          </p>
-        </div>
+        <h1>Let's revolutionize the way we approach rentals with RentBud.</h1>
+        <p>Adding security to the rental market, and strengthening tenant-landlord bonds! We securely connect tenants to approved landlords, and allow you to manage your rental agreements with ease.</p>
+        <button onClick={() => navigate('/about')}>Learn More</button>
       </header>
     </div>
   );

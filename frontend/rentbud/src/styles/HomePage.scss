@@ -1,28 +1,46 @@
 .HomePage {
   text-align: center;
+  font-family: Arial, sans-serif;
 }
 
 .HomePage-header {
-  background-color: #2a364d;
+  background: url('../../public/background1.jpg') no-repeat center center fixed; 
+  background-size: cover;
   min-height: 100vh;
   display: flex;
   flex-direction: column;
-  align-items: center; // align items to the center
+  align-items: center;
   justify-content: center;
-  font-size: calc(10px + 2vmin);
   color: white;
+  padding: 20px 40px;
+  box-sizing: border-box;
 }
 
-.HomePage-about {
-  align-self: flex-start; // align this div to the start (left for column direction)
-  padding-left: 10%; // add some padding to not stick to the edge
+.HomePage-header h1 {
+  font-size: 3em;
+  margin-bottom: 20px;
+  max-width: 800px;
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
 }
 
-.HomePage-about-tile-1 {
-  border: 1px solid black;
-  padding: 10px;
-  margin: 10px;
-  width: 200px; // set a fixed width for the box
-  text-align: center; // align the text to the center
-  font-size: 14px; // make the text smaller
+.HomePage-header p {
+  font-size: 1.5em;
+  margin-bottom: 40px;
+  max-width: 600px;
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+}
+
+.HomePage-header button {
+  font-size: 1.2em;
+  padding: 15px 30px;
+  border: none;
+  background-color: #ff7f50;
+  color: white;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+}
+
+.HomePage-header button:hover {
+  background-color: #ff6347;
 }
