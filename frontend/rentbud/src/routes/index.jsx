@@ -10,9 +10,11 @@ function HomePage() {
     <div className="HomePage">
       <Navbar />
       <header className="HomePage-header">
-        <h1>Let's revolutionize the way we approach rentals with RentBud.</h1>
-        <p>Adding security to the rental market, and strengthening tenant-landlord bonds! We securely connect tenants to approved landlords, and allow you to manage your rental agreements with ease.</p>
-        <button onClick={() => navigate('/about')}>Learn More</button>
+        <div className="HomePage-header-content">
+          <h1>Let's revolutionize the way we approach rentals with RentBud.</h1>
+          <p>Adding security to the rental market, and strengthening tenant-landlord bonds! We securely connect tenants to approved landlords, and allow you to manage your rental agreements with ease.</p>
+          <button onClick={() => navigate('/about')}>Learn More</button>
+        </div>
       </header>
     </div>
   );

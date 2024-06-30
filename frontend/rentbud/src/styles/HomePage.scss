@@ -16,11 +16,22 @@
   box-sizing: border-box;
 }
 
+.HomePage-header-content {
+  background-color: rgba(128, 128, 128, 0.5); // Transparent grey background
+  padding: 20px;
+  border-radius: 10px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
 .HomePage-header h1 {
   font-size: 3em;
   margin-bottom: 20px;
   max-width: 800px;
   text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+  text-align: center;
 }
 
 .HomePage-header p {
@@ -28,6 +39,7 @@
   margin-bottom: 40px;
   max-width: 600px;
   text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+  text-align: center;
 }
 
 .HomePage-header button {
@@ -39,6 +51,7 @@
   cursor: pointer;
   transition: background-color 0.3s ease;
   text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+  text-align: center;
 }
 
 .HomePage-header button:hover {
