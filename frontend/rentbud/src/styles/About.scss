@@ -1,28 +1,50 @@
 .About {
-  text-align: center;
+  font-family: Arial, sans-serif;
 }
 
 .About-header {
-  background-color: #2a364d;
-  min-height: 100vh;
+  background: url('../../public/background2.jpg') no-repeat center center fixed; 
+  background-size: cover;
+  height: 50vh;
   display: flex;
-  flex-direction: column;
   align-items: center;
   justify-content: center;
-  font-size: calc(10px + 2vmin);
   color: white;
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+}
+
+.About-header h1 {
+  font-size: 3em;
 }
 
 .About-content {
-  align-self: flex-start;
-  padding-left: 10%;
+  background-color: white;
+  padding: 40px;
+  text-align: center;
 }
 
-.About-content-tile-1 {
-  border: 1px solid black;
-  padding: 10px;
-  margin: 10px;
-  width: 200px;
-  text-align: center;
-  font-size: 14px;
+.About-content p {
+  font-size: 1.5em;
+  max-width: 800px;
+  margin: 0 auto;
+}
+
+.About-content-tile {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-top: 40px;
+}
+
+.About-content-tile img {
+  width: 45%;
+  height: auto;
+}
+
+.About-content-tile div {
+  width: 45%;
+}
+
+.About-content-tile:nth-child(even) {
+  flex-direction: row-reverse;
 }
